@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شركة مكة للعمرة والحج</title>
+<meta name="description" content="شركة مكة — تأشيرات ورحلات عمرة وحج من الصعيد والقاهرة، إقامة في فنادق شارع إبراهيم الخليل خلف برج الساعة، رحلات متاحة طوال العام.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  --bg:#F4F2EC;            /* marble ground */
+  --bg-2:#EBE7DD;          /* recessed marble */
+  --surface:#FFFDF8;       /* raised card */
+  --line:#DAD4C6;
+  --ink:#1B1915;
+  --ink-2:#4F4A40;
+  --ink-3:#7E776A;
+  --gold:#A8852A;          /* kiswa embroidery */
+  --gold-2:#C9A44A;
+  --gold-soft:#F1E6C9;
+  --green:#1E6B4E;         /* clock face green */
+  --green-soft:#DCEBE3;
+  --night:#0E0F14;         /* hero night sky */
+  --night-2:#1A1C27;
+  --on-night:#F5F1E6;
+  --on-night-2:#B9B3A2;
+  --wa:#1FA855;
+  --shadow:0 18px 40px -22px rgba(27,25,21,.35);
+  --radius:14px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E0F14;
+    --bg-2:#15171F;
+    --surface:#1B1D27;
+    --line:#2C2F3C;
+    --ink:#F0ECE1;
+    --ink-2:#C4BEAE;
+    --ink-3:#8B8576;
+    --gold:#D4AE4A;
+    --gold-2:#E6C463;
+    --gold-soft:#2B2617;
+    --green:#4FB287;
+    --green-soft:#16302A;
+    --shadow:0 18px 40px -22px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E0F14;
+  --bg-2:#15171F;
+  --surface:#1B1D27;
+  --line:#2C2F3C;
+  --ink:#F0ECE1;
+  --ink-2:#C4BEAE;
+  --ink-3:#8B8576;
+  --gold:#D4AE4A;
+  --gold-2:#E6C463;
+  --gold-soft:#2B2617;
+  --green:#4FB287;
+  --green-soft:#16302A;
+  --shadow:0 18px 40px -22px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Readex Pro","Segoe UI",Tahoma,Arial,sans-serif;
+  font-weight:300;
+  font-size:17px;
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+  direction:rtl;
+}
+h1,h2,h3,h4{
+  font-family:"Reem Kufi","Readex Pro",Tahoma,sans-serif;
+  font-weight:600;
+  line-height:1.35;
+  margin:0;
+  text-wrap:balance;
+}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+ul{margin:0;padding:0;list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img,svg{max-width:100%;display:block}
+i[data-lucide]{display:inline-block;width:1em;height:1em}
+.num{font-variant-numeric:tabular-nums;font-weight:500}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+.wrap{width:min(1180px,100%);margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.8rem;font-weight:500;letter-spacing:.08em;color:var(--gold);
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.sec{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:grid;gap:14px;max-width:62ch;margin-bottom:clamp(28px,4vw,48px)}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}
+.sec-head p{color:var(--ink-2);font-size:1.05rem}
+.alt{background:var(--bg-2)}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:13px 22px;border-radius:999px;font-weight:500;font-size:.98rem;
+  border:1px solid transparent;transition:transform .15s ease,background .2s ease,border-color .2s ease;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-gold{background:var(--gold);color:#15130D;border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-2);border-color:var(--gold-2)}
+.btn-wa{background:var(--wa);color:#fff;border-color:var(--wa)}
+.btn-wa:hover{background:#178f47}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink-3)}
+.btn-ghost.on-night{border-color:rgba(245,241,230,.35);color:var(--on-night)}
+.btn-ghost.on-night:hover{border-color:var(--on-night)}
+
+/* ---------- Nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:42px;height:42px;border-radius:12px;background:var(--night);
+  display:grid;place-items:center;color:var(--gold-2);flex:none;
+}
+.brand-mark svg{width:26px;height:26px}
+.brand-name{font-family:"Reem Kufi",sans-serif;font-weight:700;font-size:1.25rem;line-height:1.1}
+.brand-sub{font-size:.72rem;color:var(--ink-3);letter-spacing:.05em}
+.menu{display:flex;align-items:center;gap:4px}
+.menu > li{position:relative}
+.menu a,.menu .dd-btn{
+  display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:10px;
+  font-size:.95rem;font-weight:400;color:var(--ink-2);
+}
+.menu a:hover,.menu .dd-btn:hover,.menu .dd-btn[aria-expanded="true"]{background:var(--bg-2);color:var(--ink)}
+.dd-btn svg{width:14px;height:14px;transition:transform .2s}
+.dd-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.dd{
+  position:absolute;top:calc(100% + 8px);right:0;min-width:280px;
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);padding:8px;display:none;z-index:60;
+}
+.dd[data-open="true"]{display:block;animation:pop .16s ease}
+@keyframes pop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.dd a{display:grid;gap:2px;padding:10px 12px;border-radius:10px}
+.dd a:hover{background:var(--bg-2)}
+.dd b{font-weight:500;color:var(--ink);font-size:.95rem}
+.dd small{color:var(--ink-3);font-size:.78rem}
+.dd .dd-price{color:var(--gold);font-weight:500;font-size:.82rem}
+.nav-cta{display:flex;align-items:center;gap:8px}
+.nav-cta .btn{padding:10px 16px;font-size:.9rem}
+.burger{display:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--line);place-items:center}
+.burger svg{width:22px;height:22px}
+.mobile{
+  display:none;border-top:1px solid var(--line);background:var(--bg);
+  padding:10px clamp(16px,4vw,32px) 18px;
+}
+.mobile[data-open="true"]{display:block;max-height:calc(100vh - 68px);max-height:calc(100dvh - 68px);overflow-y:auto}
+.mobile a{display:block;padding:12px 6px;border-bottom:1px solid var(--line);font-size:1rem}
+.mobile .sub{padding-right:18px;color:var(--ink-2);font-size:.95rem}
+.mobile .btn{margin-top:14px;width:100%}
+@media (max-width:920px){
+  .menu,.nav-cta .btn-ghost{display:none}
+  .burger{display:grid}
+}
+@media (max-width:480px){
+  .brand-sub{display:none}
+  .brand-name{font-size:1.15rem}
+  .nav-cta .btn-wa{padding:10px 12px}
+  .nav-cta .btn-wa .lbl{display:none}
+  .nav .wrap{gap:12px}
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;background:var(--night);color:var(--on-night);
+  /* Replace the drawn skyline by dropping a real photo of شارع إبراهيم الخليل here:
+     background-image:url("hero.jpg"); background-size:cover; background-position:center; */
+}
+.hero-sky{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 100%,rgba(212,174,74,.22),transparent 65%),
+    radial-gradient(ellipse 40% 40% at 55% 62%,rgba(79,178,135,.18),transparent 60%),
+    linear-gradient(180deg,#0A0B12 0%,#141726 55%,#1E1B24 100%);
+}
+.hero-art{position:absolute;inset:auto 0 0 0;height:100%;width:100%;pointer-events:none}
+.hero-art svg{width:100%;height:100%;object-fit:cover}
+.hero .wrap{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:end;
+  padding-block:clamp(56px,9vw,120px) clamp(44px,6vw,72px);
+}
+.hero-copy{display:grid;gap:22px;max-width:640px}
+.hero .eyebrow{color:var(--gold-2)}
+.hero .eyebrow::before{background:var(--gold-2)}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.1rem);font-weight:700;color:#fff}
+.hero h1 em{font-style:normal;color:var(--gold-2)}
+.hero-lead{font-size:clamp(1.02rem,1.5vw,1.2rem);color:var(--on-night-2);max-width:54ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.trip-card{
+  justify-self:end;width:min(100%,380px);
+  background:rgba(245,241,230,.06);border:1px solid rgba(245,241,230,.16);
+  border-radius:18px;padding:22px 24px;backdrop-filter:blur(8px);
+  display:grid;gap:14px;
+}
+.trip-card .tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.06em;color:var(--gold-2);
+}
+.trip-card .tag i{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 4px rgba(31,168,85,.25);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(31,168,85,.25)}50%{box-shadow:0 0 0 8px rgba(31,168,85,.08)}}
+.trip-date{font-family:"Reem Kufi",sans-serif;font-size:1.7rem;font-weight:600;color:#fff;line-height:1.2}
+.trip-date small{display:block;font-family:"Readex Pro",sans-serif;font-size:.85rem;font-weight:300;color:var(--on-night-2);margin-top:4px}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.count div{background:rgba(0,0,0,.28);border-radius:10px;padding:10px 6px;text-align:center}
+.count b{display:block;font-size:1.5rem;font-weight:500;font-variant-numeric:tabular-nums;color:#fff;line-height:1.1}
+.count span{font-size:.7rem;color:var(--on-night-2)}
+.trip-card .note{font-size:.82rem;color:var(--on-night-2);line-height:1.6}
+.stats{position:relative;z-index:2;border-top:1px solid rgba(245,241,230,.12);background:rgba(0,0,0,.25)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:18px 0;display:grid;gap:2px;border-right:1px solid rgba(245,241,230,.1);padding-right:18px}
+.stat:first-child{border-right:0;padding-right:0}
+.stat b{font-family:"Reem Kufi",sans-serif;font-size:1.35rem;font-weight:600;color:#fff}
+.stat span{font-size:.8rem;color:var(--on-night-2)}
+@media (max-width:920px){
+  .hero .wrap{grid-template-columns:1fr}
+  .trip-card{justify-self:stretch;width:100%}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);row-gap:0}
+  .stat:nth-child(3){border-right:0;padding-right:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(245,241,230,.1)}
+}
+@media (max-width:420px){
+  .trip-card{padding:18px 16px}
+  .count{gap:6px}
+  .count b{font-size:1.3rem}
+  .hero h1 br{display:none}
+  .stats .wrap{grid-template-columns:1fr}
+  .stat{border-right:0;padding-right:0;border-top:1px solid rgba(245,241,230,.1)}
+  .stat:first-child{border-top:0}
+}
+
+/* ---------- Tabs (programs) ---------- */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:28px}
+.tab{
+  padding:12px 18px;font-size:1rem;font-weight:400;color:var(--ink-2);
+  border-bottom:2px solid transparent;margin-bottom:-1px;display:inline-flex;gap:10px;align-items:center;
+}
+.tab .pill{font-size:.7rem;padding:2px 8px;border-radius:999px;background:var(--gold-soft);color:var(--gold);font-weight:500}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);font-weight:500;border-bottom-color:var(--gold)}
+@media (max-width:760px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+        margin-inline:calc(-1 * clamp(16px,4vw,32px));padding-inline:clamp(16px,4vw,32px)}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;white-space:nowrap;padding:12px 14px;font-size:.95rem}
+}
+.panel{display:none}
+.panel[data-active="true"]{display:grid;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.program{
+  grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start;
+}
+.program-body{display:grid;gap:22px}
+.program-body h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}
+.program-body .lead{color:var(--ink-2);font-size:1.05rem;max-width:60ch}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.feat li{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.feat svg{width:22px;height:22px;flex:none;color:var(--green);margin-top:4px}
+.feat b{display:block;font-weight:500;font-size:.95rem}
+.feat span{font-size:.85rem;color:var(--ink-3);line-height:1.6}
+.price-card{
+  position:sticky;top:90px;
+  background:var(--night);color:var(--on-night);border-radius:18px;padding:26px;display:grid;gap:14px;
+  box-shadow:var(--shadow);
+}
+.price-card .lbl{font-size:.78rem;letter-spacing:.06em;color:var(--on-night-2)}
+.price{font-family:"Reem Kufi",sans-serif;font-size:2.4rem;font-weight:700;color:var(--gold-2);line-height:1.1;font-variant-numeric:tabular-nums}
+.price small{font-family:"Readex Pro",sans-serif;font-size:.95rem;font-weight:300;color:var(--on-night-2);margin-right:6px}
+.price-card ul{display:grid;gap:8px;font-size:.88rem;color:var(--on-night-2)}
+.price-card li{display:flex;gap:8px;align-items:center}
+.price-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold-2);flex:none}
+.price-card .btn{width:100%;margin-top:4px}
+.price-card .fine{font-size:.75rem;color:var(--on-night-2);line-height:1.6}
+@media (max-width:920px){
+  .program{grid-template-columns:1fr}
+  .price-card{position:static}
+}
+
+/* ---------- Rooms ---------- */
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.room{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:10px;position:relative}
+.room .beds{display:flex;gap:6px;color:var(--gold)}
+.room .beds svg{width:22px;height:22px}
+.room h3{font-size:1.25rem}
+.room p{color:var(--ink-2);font-size:.92rem}
+.room .badge{position:absolute;top:16px;left:16px;font-size:.72rem;padding:3px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);font-weight:500}
+.room.std{border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft)}
+@media (max-width:760px){.rooms{grid-template-columns:1fr}.room{padding:18px}}
+
+/* ---------- Group / departure logic ---------- */
+.group{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.meter{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:18px}
+.meter-bar{position:relative;height:14px;border-radius:999px;background:var(--bg-2);overflow:visible}
+.meter-bar i{position:absolute;inset:0 auto 0 0;right:0;width:50%;border-radius:999px;background:linear-gradient(90deg,var(--gold-2),var(--gold))}
+.meter-marks{display:flex;justify-content:space-between;font-size:.78rem;color:var(--ink-3)}
+.meter-marks b{color:var(--ink);font-weight:500}
+.milestones{display:grid;gap:12px}
+.milestones li{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:start}
+.milestones .n{
+  width:52px;height:52px;border-radius:14px;background:var(--gold-soft);color:var(--gold);
+  display:grid;place-items:center;font-family:"Reem Kufi",sans-serif;font-weight:700;font-size:1.25rem;
+}
+.milestones b{display:block;font-weight:500}
+.milestones span{font-size:.9rem;color:var(--ink-2)}
+@media (max-width:820px){.group{grid-template-columns:1fr}}
+
+/* ---------- Street map ---------- */
+.street{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,32px);display:grid;gap:22px;overflow:hidden}
+.street svg{width:100%;height:auto}
+.street-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:640px){.street-scroll svg{min-width:560px}}
+.street-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.street-legend li{display:grid;gap:4px;padding-right:14px;border-right:3px solid var(--line)}
+.street-legend li.h{border-right-color:var(--green)}
+.street-legend li.t{border-right-color:var(--gold)}
+.street-legend b{font-weight:500}
+.street-legend span{font-size:.88rem;color:var(--ink-2)}
+.loc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:start}
+.loc-copy{display:grid;gap:18px}
+.loc-copy p{color:var(--ink-2)}
+.callout{
+  border-right:3px solid var(--gold);padding:12px 16px;background:var(--gold-soft);border-radius:0 10px 10px 0;
+  color:var(--ink);font-size:.95rem;
+}
+@media (max-width:920px){.loc-grid{grid-template-columns:1fr}}
+
+/* ---------- About ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.about-card{
+  background:var(--night);color:var(--on-night);border-radius:18px;padding:30px;display:grid;gap:18px;
+}
+.about-card .who{display:flex;gap:16px;align-items:center}
+.avatar{width:64px;height:64px;border-radius:18px;background:var(--gold);color:#15130D;display:grid;place-items:center;font-family:"Reem Kufi",sans-serif;font-weight:700;font-size:1.6rem;flex:none}
+.about-card h3{font-size:1.4rem;color:#fff}
+.about-card .role{font-size:.85rem;color:var(--on-night-2)}
+.about-card dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:.92rem;margin:0}
+.about-card dt{color:var(--on-night-2)}
+.about-card dd{margin:0;color:#fff}
+.about-copy{display:grid;gap:16px}
+.about-copy p{color:var(--ink-2)}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+
+/* ---------- Contact ---------- */
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ccard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:14px}
+.ccard .flag{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;color:var(--ink-3);letter-spacing:.04em}
+.ccard .flag i{width:26px;height:18px;border-radius:3px;display:inline-block;border:1px solid var(--line)}
+.ccard .flag i.sa{background:#1E6B4E}
+.ccard .flag i.eg{background:linear-gradient(180deg,#CE1126 33%,#fff 33% 66%,#000 66%)}
+.ccard h3{font-size:1.3rem}
+.ccard .tel{font-size:1.5rem;font-weight:500;font-variant-numeric:tabular-nums;direction:ltr;text-align:right;letter-spacing:.02em}
+.ccard .tel.placeholder{color:var(--ink-3);font-size:1.05rem;font-weight:300;letter-spacing:0;direction:rtl}
+.ccard p{color:var(--ink-2);font-size:.93rem}
+.ccard .acts{display:flex;gap:10px;flex-wrap:wrap}
+.pref{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;color:var(--wa);background:color-mix(in srgb,var(--wa) 12%,transparent);padding:3px 10px;border-radius:999px;font-weight:500}
+@media (max-width:760px){.contact{grid-template-columns:1fr}.ccard{padding:20px}.ccard .acts .btn{flex:1 1 auto}}
+
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--line);padding-block:28px;font-size:.85rem;color:var(--ink-3)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;padding-bottom:70px}
+@media (min-width:761px){footer .wrap{padding-bottom:0}}
+footer .links{display:flex;gap:18px;flex-wrap:wrap}
+footer a:hover{color:var(--ink)}
+
+/* floating WhatsApp */
+.fab{
+  position:fixed;bottom:22px;left:22px;z-index:40;
+  width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;
+  display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(31,168,85,.6);
+  transition:transform .15s;
+}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:28px;height:28px}
+@media (max-width:480px){.fab{width:52px;height:52px;bottom:16px;left:16px}}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="شركة مكة — الرئيسية">
+      <span class="brand-mark" aria-hidden="true">
+        <i data-lucide="moon-star" aria-hidden="true"></i>
+      </span>
+      <span>
+        <span class="brand-name">شركة مكة</span><br>
+        <span class="brand-sub">للعمرة والحج · القاهرة · قنا</span>
+      </span>
+    </a>
+
+    <nav aria-label="القائمة الرئيسية">
+      <ul class="menu">
+        <li>
+          <button class="dd-btn" id="dd-btn" aria-expanded="false" aria-controls="dd-menu" aria-haspopup="true">
+            البرامج
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="dd" id="dd-menu" role="menu" aria-labelledby="dd-btn">
+            <a href="#programs" data-tab="eco" role="menuitem">
+              <b>عمرة شارع إبراهيم الخليل</b>
+              <small>فنادق خلف برج الساعة · غرف رباعية</small>
+              <span class="dd-price">من 37 إلى 41 ألف</span>
+            </a>
+            <a href="#programs" data-tab="vip" role="menuitem">
+              <b>عمرة VIP · 8 أيام</b>
+              <small>برج الساعة أو أبراج الصفوة في وجه الحرم</small>
+              <span class="dd-price">من 55 إلى 70 ألف</span>
+            </a>
+            <a href="#programs" data-tab="hajj" role="menuitem">
+              <b>تأشيرات الحج</b>
+              <small>سجّل اهتمامك مبكرًا وسنتواصل معك</small>
+              <span class="dd-price">حسب الموسم</span>
+            </a>
+          </div>
+        </li>
+        <li><a href="#trip">الرحلة القادمة</a></li>
+        <li><a href="#hotels">الفنادق والموقع</a></li>
+        <li><a href="#rooms">الغرف</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#contact">اتصل بنا</a>
+      <a class="btn btn-wa" href="https://wa.me/966XXXXXXXXX" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="lbl">واتساب</span>
+      </a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile" aria-label="فتح القائمة">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="mobile" id="mobile">
+    <a href="#programs" data-tab="eco">عمرة شارع إبراهيم الخليل</a>
+    <a href="#programs" data-tab="vip" class="sub">عمرة VIP · 8 أيام</a>
+    <a href="#programs" data-tab="hajj" class="sub">تأشيرات الحج</a>
+    <a href="#trip">الرحلة القادمة</a>
+    <a href="#hotels">الفنادق والموقع</a>
+    <a href="#rooms">الغرف</a>
+    <a href="#about">من نحن</a>
+    <a href="#contact">تواصل معنا</a>
+    <a class="btn btn-gold" href="#contact">احجز مقعدك</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-sky" aria-hidden="true"></div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <linearGradient id="tw" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3A3C4E"/><stop offset="1" stop-color="#15161F"/>
+        </linearGradient>
+        <linearGradient id="tw2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2B2D3C"/><stop offset="1" stop-color="#121319"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#4FB287" stop-opacity=".9"/><stop offset="1" stop-color="#4FB287" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="win" width="10" height="14" patternUnits="userSpaceOnUse">
+          <rect x="3" y="3" width="3" height="5" fill="#D4AE4A" opacity=".55"/>
+        </pattern>
+      </defs>
+      <!-- stars -->
+      <g fill="#F5F1E6" opacity=".7">
+        <circle cx="120" cy="60" r="1.2"/><circle cx="260" cy="110" r="1"/><circle cx="410" cy="40" r="1.4"/>
+        <circle cx="760" cy="70" r="1"/><circle cx="930" cy="130" r="1.3"/><circle cx="1080" cy="50" r="1"/>
+        <circle cx="540" cy="150" r=".9"/><circle cx="1010" cy="210" r="1.1"/><circle cx="180" cy="200" r="1"/>
+      </g>
+      <!-- plane and its trail -->
+      <path d="M40 150 C 260 90, 520 60, 820 88" fill="none" stroke="#F5F1E6" stroke-opacity=".28" stroke-width="1.5" stroke-dasharray="6 8"/>
+      <g transform="translate(790 58) scale(2.6)" fill="#F5F1E6"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></g>
+      <!-- distant hills -->
+      <path d="M0 400 Q150 330 300 380 T600 370 T900 385 T1200 360 V520 H0Z" fill="#1A1B25"/>
+      <!-- haram minarets (left) -->
+      <g fill="url(#tw2)">
+        <rect x="120" y="300" width="14" height="220"/><rect x="200" y="290" width="14" height="230"/>
+        <rect x="90" y="400" width="200" height="120"/>
+        <rect x="1000" y="310" width="14" height="210"/><rect x="1080" y="300" width="14" height="220"/>
+        <rect x="960" y="405" width="180" height="115"/>
+      </g>
+      <g fill="#D4AE4A" opacity=".8"><circle cx="127" cy="296" r="4"/><circle cx="207" cy="286" r="4"/><circle cx="1007" cy="306" r="4"/><circle cx="1087" cy="296" r="4"/></g>
+      <!-- Abraj Al Bait flanking towers -->
+      <g>
+        <rect x="380" y="260" width="90" height="260" fill="url(#tw2)"/>
+        <rect x="380" y="260" width="90" height="260" fill="url(#win)" opacity=".7"/>
+        <rect x="730" y="250" width="90" height="270" fill="url(#tw2)"/>
+        <rect x="730" y="250" width="90" height="270" fill="url(#win)" opacity=".7"/>
+        <rect x="320" y="330" width="60" height="190" fill="url(#tw2)"/>
+        <rect x="820" y="320" width="60" height="200" fill="url(#tw2)"/>
+        <rect x="320" y="330" width="60" height="190" fill="url(#win)" opacity=".5"/>
+        <rect x="820" y="320" width="60" height="200" fill="url(#win)" opacity=".5"/>
+      </g>
+      <!-- Clock tower -->
+      <g>
+        <rect x="470" y="300" width="260" height="220" fill="url(#tw)"/>
+        <rect x="470" y="300" width="260" height="220" fill="url(#win)" opacity=".75"/>
+        <rect x="540" y="190" width="120" height="120" fill="url(#tw)"/>
+        <rect x="540" y="190" width="120" height="120" fill="url(#win)" opacity=".7"/>
+        <!-- clock housing -->
+        <rect x="520" y="120" width="160" height="84" rx="4" fill="#23253A"/>
+        <rect x="524" y="124" width="152" height="76" rx="3" fill="#1A2A28"/>
+        <circle cx="600" cy="162" r="60" fill="url(#glow)" opacity=".6"/>
+        <circle cx="600" cy="162" r="32" fill="#2E8F6A"/>
+        <circle cx="600" cy="162" r="32" fill="none" stroke="#D4AE4A" stroke-width="2.5"/>
+        <path d="M600 162 V140 M600 162 L616 170" stroke="#F5F1E6" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- spire -->
+        <rect x="586" y="66" width="28" height="54" fill="#2C2E40"/>
+        <path d="M600 22 L612 66 H588 Z" fill="#D4AE4A"/>
+        <!-- crescent -->
+        <mask id="cm"><rect x="585" y="-2" width="30" height="26" fill="#fff"/><circle cx="605.5" cy="7" r="7.5" fill="#000"/></mask>
+        <circle cx="600" cy="10" r="9" fill="#D4AE4A" mask="url(#cm)"/>
+      </g>
+      <!-- street lights along Ibrahim Al-Khalil -->
+      <g fill="#D4AE4A" opacity=".9">
+        <circle cx="60" cy="470" r="2"/><circle cx="160" cy="470" r="2"/><circle cx="260" cy="470" r="2"/><circle cx="1140" cy="470" r="2"/><circle cx="1040" cy="470" r="2"/>
+      </g>
+      <rect x="0" y="480" width="1200" height="40" fill="#0E0F14"/>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">شركة مكة · تأشيرات عمرة وحج</span>
+      <h1>عمرتك من الصعيد<br>إلى <em>خطوات من الحرم</em></h1>
+      <p class="hero-lead">
+        نحجز لك في فنادق شارع إبراهيم الخليل خلف برج الساعة مباشرة، بأسعار تبدأ من 37 ألفًا،
+        ورحلات جماعية تنطلق طوال العام. صاحب الشركة يدير فندقًا في الشارع نفسه، فأنت في عهدة من يعرف المكان.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/966XXXXXXXXX" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          احجز عبر واتساب
+        </a>
+        <a class="btn btn-ghost on-night" href="#programs">استعرض البرامج</a>
+      </div>
+    </div>
+
+    <aside class="trip-card" aria-label="الرحلة القادمة">
+      <span class="tag"><i aria-hidden="true"></i> الحجز مفتوح الآن</span>
+      <div class="trip-date">
+        23 – 29 سبتمبر
+        <small>الرحلة القادمة · 7 أيام · انطلاق من الصعيد</small>
+      </div>
+      <div class="count" id="count" aria-live="polite">
+        <div><b id="c-d">00</b><span>يوم</span></div>
+        <div><b id="c-h">00</b><span>ساعة</span></div>
+        <div><b id="c-m">00</b><span>دقيقة</span></div>
+        <div><b id="c-s">00</b><span>ثانية</span></div>
+      </div>
+      <p class="note">تنطلق الرحلة فور اكتمال العدد. الحد الأدنى 40 معتمرًا، وعند اكتمال 80 يُحجز طيران كامل للمجموعة.</p>
+    </aside>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>من 37 ألف</b><span>سعر العمرة شامل الإقامة</span></div>
+      <div class="stat"><b>12 شهرًا</b><span>العمرة متاحة طوال العام</span></div>
+      <div class="stat"><b>40 – 80</b><span>معتمرًا في كل رحلة</span></div>
+      <div class="stat"><b>إبراهيم الخليل</b><span>كل فنادقنا خلف برج الساعة</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section class="sec" id="programs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">البرامج</span>
+      <h2>اختر البرنامج الذي يناسب أسرتك وميزانيتك</h2>
+      <p>الفرق بين الأسعار يرجع إلى عدد الأفراد في الغرفة، والبرنامج، ومدى قرب الفندق من برج الساعة والحرم.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="برامج العمرة والحج">
+      <button class="tab" role="tab" id="tab-eco" aria-controls="panel-eco" aria-selected="true" data-tab="eco">عمرة شارع إبراهيم الخليل <span class="pill">الأكثر طلبًا</span></button>
+      <button class="tab" role="tab" id="tab-vip" aria-controls="panel-vip" aria-selected="false" data-tab="vip">عمرة VIP · 8 أيام</button>
+      <button class="tab" role="tab" id="tab-hajj" aria-controls="panel-hajj" aria-selected="false" data-tab="hajj">الحج</button>
+    </div>
+
+    <!-- ECO -->
+    <div class="panel program" role="tabpanel" id="panel-eco" aria-labelledby="tab-eco" data-active="true">
+      <div class="program-body">
+        <h3>عمرة شارع إبراهيم الخليل</h3>
+        <p class="lead">
+          إقامة في أحد فنادق شارع إبراهيم الخليل، من أول كوبري المسفلة حتى آخر الشارع، وكلها تبدأ من خلف برج الساعة مباشرة.
+          نحجز في أي فندق متاح على طول الشارع بحسب رغبتك وميزانيتك.
+        </p>
+        <ul class="feat">
+          <li>
+            <i data-lucide="hotel" aria-hidden="true"></i>
+            <div><b>فنادق خلف برج الساعة</b><span>على مسافة سير من الحرم، في الشارع الذي يدير فيه صاحب الشركة فندقه.</span></div>
+          </li>
+          <li>
+            <i data-lucide="id-card" aria-hidden="true"></i>
+            <div><b>التأشيرة مشمولة</b><span>نستخرج تأشيرة العمرة كجزء من البرنامج، بلا إجراءات من جانبك.</span></div>
+          </li>
+          <li>
+            <i data-lucide="bed-double" aria-hidden="true"></i>
+            <div><b>غرف رباعية أساسًا</b><span>والثلاثي والخماسي متاحان للأسر التي تريد الإقامة معًا، بفرق في السعر.</span></div>
+          </li>
+          <li>
+            <i data-lucide="bus" aria-hidden="true"></i>
+            <div><b>رحلة جماعية من الصعيد</b><span>تنطلق المجموعة معًا عند اكتمال العدد، بأتوبيس أو بطيران كامل.</span></div>
+          </li>
+          <li>
+            <i data-lucide="calendar-days" aria-hidden="true"></i>
+            <div><b>متاحة كل شهور السنة</b><span>لا تنتظر موسمًا؛ كل ما يلزم هو اكتمال المجموعة.</span></div>
+          </li>
+          <li>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <div><b>خيارات قرب أو بُعد</b><span>الأقرب لبرج الساعة أعلى سعرًا، والأبعد على الشارع نفسه أوفر.</span></div>
+          </li>
+        </ul>
+      </div>
+      <aside class="price-card">
+        <span class="lbl">سعر الفرد · غرفة رباعية</span>
+        <div class="price">37 – 41 <small>ألف جنيه</small></div>
+        <ul>
+          <li>تأشيرة العمرة</li>
+          <li>إقامة في شارع إبراهيم الخليل</li>
+          <li>رحلة جماعية ذهابًا وعودة</li>
+          <li>متابعة مباشرة من إدارة الفندق</li>
+        </ul>
+        <a class="btn btn-gold" href="#contact">اسأل عن هذا البرنامج</a>
+        <p class="fine">السعر يختلف حسب الفندق المختار وعدد الأفراد في الغرفة. الأسعار بالألف جنيه مصري.</p>
+      </aside>
+    </div>
+
+    <!-- VIP -->
+    <div class="panel program" role="tabpanel" id="panel-vip" aria-labelledby="tab-vip" data-active="false">
+      <div class="program-body">
+        <h3>عمرة VIP · 8 أيام في وجه الحرم</h3>
+        <p class="lead">
+          للراغبين في أعلى مستوى: إقامة في برج الساعة نفسه أو في أبراج الصفوة، وهما البرجان المطلّان على الحرم مباشرة.
+          البرنامج ثمانية أيام كاملة، والتأشيرات فيه أضيق فترة، ولذلك يرتفع سعره.
+        </p>
+        <ul class="feat">
+          <li>
+            <i data-lucide="building-2" aria-hidden="true"></i>
+            <div><b>برج الساعة أو أبراج الصفوة</b><span>البرجان اللذان يفتحان على الحرم مباشرة، دون أي مسافة سير.</span></div>
+          </li>
+          <li>
+            <i data-lucide="calendar-days" aria-hidden="true"></i>
+            <div><b>8 أيام كاملة</b><span>برنامج أطول يمنحك وقتًا للطواف والصلاة في راحة.</span></div>
+          </li>
+          <li>
+            <i data-lucide="id-card" aria-hidden="true"></i>
+            <div><b>تأشيرة مضمونة</b><span>نتولى الإجراءات كاملة رغم ضيق فترة التأشيرات في هذا البرنامج.</span></div>
+          </li>
+          <li>
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            <div><b>خدمة مخصصة</b><span>مجموعات أصغر، ومتابعة شخصية من الأستاذ مدثر وفريقه.</span></div>
+          </li>
+        </ul>
+      </div>
+      <aside class="price-card">
+        <span class="lbl">سعر الفرد · برنامج 8 أيام</span>
+        <div class="price">55 – 70 <small>ألف جنيه</small></div>
+        <ul>
+          <li>تأشيرة عمرة سريعة</li>
+          <li>إقامة في برج الساعة أو الصفوة</li>
+          <li>إطلالة مباشرة على الحرم</li>
+          <li>8 أيام كاملة</li>
+        </ul>
+        <a class="btn btn-gold" href="#contact">اطلب عرض VIP</a>
+        <p class="fine">الأسعار تقريبية وتتغير حسب الموسم والبرج المختار. الأسعار بالألف جنيه مصري.</p>
+      </aside>
+    </div>
+
+    <!-- HAJJ -->
+    <div class="panel program" role="tabpanel" id="panel-hajj" aria-labelledby="tab-hajj" data-active="false">
+      <div class="program-body">
+        <h3>تأشيرات ورحلات الحج</h3>
+        <p class="lead">
+          نشاط الشركة يشمل تأشيرات الحج إلى جانب العمرة. تفاصيل برنامج الحج وأسعاره تُعلن مع فتح الموسم،
+          وننصح بالتسجيل المبكر لأن المقاعد محدودة.
+        </p>
+        <ul class="feat">
+          <li>
+            <i data-lucide="id-card" aria-hidden="true"></i>
+            <div><b>استخراج تأشيرة الحج</b><span>نتولى إجراءات التأشيرة بالكامل عبر مقر الشركة في القاهرة.</span></div>
+          </li>
+          <li>
+            <i data-lucide="hotel" aria-hidden="true"></i>
+            <div><b>إقامة قريبة من الحرم</b><span>الفنادق نفسها في شارع إبراهيم الخليل، بحسب ما يتاح في الموسم.</span></div>
+          </li>
+          <li>
+            <i data-lucide="plane-takeoff" aria-hidden="true"></i>
+            <div><b>انطلاق من الصعيد</b><span>مجموعات من قنا والمحافظات المجاورة، بلا حاجة للسفر إلى القاهرة.</span></div>
+          </li>
+        </ul>
+      </div>
+      <aside class="price-card">
+        <span class="lbl">حج الموسم القادم</span>
+        <div class="price" style="font-size:1.6rem">يُعلن قريبًا</div>
+        <ul>
+          <li>تسجيل مبكر للاهتمام</li>
+          <li>أولوية للمسجلين أولًا</li>
+          <li>تفاصيل كاملة عبر واتساب</li>
+        </ul>
+        <a class="btn btn-gold" href="#contact">سجّل اهتمامك</a>
+        <p class="fine">تُرسل تفاصيل الحج للمسجلين فور اعتمادها.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRIP / GROUP ================= -->
+<section class="sec alt" id="trip">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">الرحلة القادمة</span>
+      <h2>من 23 إلى 29 سبتمبر، وتنطلق فور اكتمال العدد</h2>
+      <p>الرحلات لا ترتبط بموسم؛ متى اكتملت المجموعة انطلقت. هكذا نحدد حجم كل رحلة:</p>
+    </div>
+    <div class="group">
+      <div class="meter">
+        <div>
+          <span class="eyebrow" style="margin-bottom:6px">حجم المجموعة</span>
+          <h3 style="font-size:1.35rem">من 40 إلى 80 معتمرًا</h3>
+        </div>
+        <div class="meter-bar" aria-hidden="true"><i></i></div>
+        <div class="meter-marks">
+          <span><b>0</b></span>
+          <span><b>40</b> · أتوبيس</span>
+          <span><b>80</b> · طيران كامل</span>
+        </div>
+        <p style="color:var(--ink-2);font-size:.92rem">
+          لا تُطلق رحلة بأقل من 40 معتمرًا. وإذا اكتمل أتوبيس واحد فقط، ينضم إليه أتوبيس آخر من شركة أخرى في الموعد نفسه.
+        </p>
+      </div>
+      <ul class="milestones">
+        <li>
+          <span class="n">40</span>
+          <div><b>اكتمال الأتوبيس الأول</b><span>الحد الأدنى للانطلاق. الفنادق محجوزة والتأشيرات جاهزة للمجموعة.</span></div>
+        </li>
+        <li>
+          <span class="n">80</span>
+          <div><b>اكتمال طيران كامل</b><span>عند بلوغ 80 معتمرًا نحجز طائرة كاملة للمجموعة وحدها.</span></div>
+        </li>
+        <li>
+          <span class="n">∞</span>
+          <div><b>على مدار السنة</b><span>العمرة متاحة في كل الشهور. الموعد التالي يُحدد بحجزك أنت ومن معك.</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOTELS / LOCATION ================= -->
+<section class="sec" id="hotels">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">الفنادق والموقع</span>
+      <h2>شارع إبراهيم الخليل: من كوبري المسفلة حتى آخر الشارع</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-copy">
+        <p>
+          برج الساعة هو البرج الواقع في وجه الحرم مباشرة. وخلفه على طول يبدأ شارع إبراهيم الخليل،
+          ويُعرف أيضًا بشارع برج الساعة. أول الفنادق تبدأ عند كوبري المسفلة وتمتد حتى نهاية الشارع.
+        </p>
+        <p>
+          كل الفنادق التي نحجز فيها تقع على هذا الشارع. صاحب الشركة يدير فندقه في الشارع ذاته، ويتعامل مع
+          كل الفنادق الموجودة هناك، فيحجز لك في أي مكان متاح يناسب برنامجك.
+        </p>
+        <div class="callout">
+          كلما اقترب الفندق من برج الساعة ارتفع سعره. البرامج التي تبدأ من 37 ألفًا تكون في الفنادق الأبعد على الشارع،
+          و41 ألفًا للأقرب إلى البرج.
+        </div>
+      </div>
+
+      <div class="street">
+        <div class="street-scroll">
+        <svg viewBox="0 0 640 260" role="img" aria-label="رسم توضيحي لشارع إبراهيم الخليل من الحرم حتى نهاية الشارع">
+          <defs>
+            <linearGradient id="road" x1="1" y1="0" x2="0" y2="0">
+              <stop offset="0" stop-color="var(--gold)" stop-opacity=".55"/><stop offset="1" stop-color="var(--gold)" stop-opacity=".12"/>
+            </linearGradient>
+          </defs>
+          <!-- Haram -->
+          <rect x="520" y="60" width="100" height="100" rx="8" fill="var(--green-soft)" stroke="var(--green)" stroke-width="1.5"/>
+          <rect x="556" y="96" width="28" height="28" fill="var(--ink)"/>
+          <text x="570" y="180" text-anchor="middle" font-size="13" fill="var(--ink)" font-family="Reem Kufi, sans-serif" font-weight="600">الحرم المكي</text>
+          <!-- Clock tower -->
+          <rect x="452" y="40" width="52" height="150" rx="4" fill="var(--night)"/>
+          <rect x="466" y="14" width="24" height="30" fill="var(--night)"/>
+          <circle cx="478" cy="60" r="12" fill="var(--green)"/>
+          <circle cx="478" cy="60" r="12" fill="none" stroke="var(--gold-2)" stroke-width="2"/>
+          <text x="478" y="212" text-anchor="middle" font-size="12" fill="var(--ink)" font-family="Readex Pro, sans-serif">برج الساعة</text>
+          <!-- Safwa -->
+          <rect x="520" y="10" width="100" height="40" rx="4" fill="var(--bg-2)" stroke="var(--line)"/>
+          <text x="570" y="35" text-anchor="middle" font-size="11" fill="var(--ink-2)" font-family="Readex Pro, sans-serif">أبراج الصفوة</text>
+          <!-- road -->
+          <rect x="20" y="105" width="432" height="26" rx="13" fill="url(#road)"/>
+          <line x1="40" y1="118" x2="440" y2="118" stroke="var(--surface)" stroke-width="2" stroke-dasharray="10 10"/>
+          <!-- Misfalah bridge -->
+          <path d="M392 100 q18 -22 36 0" fill="none" stroke="var(--ink-2)" stroke-width="3" stroke-linecap="round"/>
+          <text x="410" y="90" text-anchor="middle" font-size="11" fill="var(--ink-2)" font-family="Readex Pro, sans-serif">كوبري المسفلة</text>
+          <!-- hotels along street -->
+          <g fill="var(--surface)" stroke="var(--gold)" stroke-width="1.5">
+            <rect x="350" y="52" width="30" height="46" rx="3"/><rect x="300" y="60" width="30" height="38" rx="3"/>
+            <rect x="250" y="56" width="30" height="42" rx="3"/><rect x="200" y="64" width="30" height="34" rx="3"/>
+            <rect x="150" y="58" width="30" height="40" rx="3"/><rect x="100" y="66" width="30" height="32" rx="3"/>
+            <rect x="50" y="62" width="30" height="36" rx="3"/>
+            <rect x="350" y="138" width="30" height="44" rx="3"/><rect x="300" y="138" width="30" height="36" rx="3"/>
+            <rect x="250" y="138" width="30" height="40" rx="3"/><rect x="200" y="138" width="30" height="34" rx="3"/>
+            <rect x="150" y="138" width="30" height="42" rx="3"/><rect x="100" y="138" width="30" height="32" rx="3"/>
+            <rect x="50" y="138" width="30" height="38" rx="3"/>
+          </g>
+          <g fill="var(--gold)"><rect x="359" y="60" width="4" height="4"/><rect x="367" y="60" width="4" height="4"/><rect x="359" y="70" width="4" height="4"/><rect x="367" y="70" width="4" height="4"/>
+            <rect x="259" y="64" width="4" height="4"/><rect x="267" y="64" width="4" height="4"/><rect x="159" y="66" width="4" height="4"/><rect x="167" y="66" width="4" height="4"/>
+            <rect x="359" y="146" width="4" height="4"/><rect x="367" y="146" width="4" height="4"/><rect x="259" y="146" width="4" height="4"/><rect x="267" y="146" width="4" height="4"/>
+            <rect x="159" y="146" width="4" height="4"/><rect x="167" y="146" width="4" height="4"/><rect x="59" y="146" width="4" height="4"/><rect x="67" y="146" width="4" height="4"/></g>
+          <!-- labels -->
+          <text x="236" y="230" text-anchor="middle" font-size="14" fill="var(--ink)" font-family="Reem Kufi, sans-serif" font-weight="600">شارع إبراهيم الخليل · فنادقنا على الجانبين</text>
+          <text x="410" y="250" text-anchor="middle" font-size="11" fill="var(--gold)" font-family="Readex Pro, sans-serif">41 ألف · الأقرب</text>
+          <text x="60" y="250" text-anchor="middle" font-size="11" fill="var(--gold)" font-family="Readex Pro, sans-serif">37 ألف · الأوفر</text>
+          <text x="30" y="122" text-anchor="middle" font-size="11" fill="var(--ink-3)" font-family="Readex Pro, sans-serif">آخر الشارع</text>
+        </svg>
+        </div>
+        <ul class="street-legend">
+          <li class="h"><b>الحرم وبرج الساعة</b><span>البرج في وجه الحرم مباشرة؛ برنامج VIP يقيم هنا أو في أبراج الصفوة.</span></li>
+          <li class="t"><b>فنادق الشارع</b><span>من أول كوبري المسفلة حتى آخر الشارع. نحجز في أي فندق متاح منها.</span></li>
+          <li><b>فندق صاحب الشركة</b><span>الأستاذ مدثر يدير فندقه في الشارع نفسه، ويتابع إقامتك بنفسه.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROOMS ================= -->
+<section class="sec alt" id="rooms">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">الغرف</span>
+      <h2>الأسرة تنزل معًا كما تريد</h2>
+      <p>الحجز الأساسي في غرف رباعية. ويمكن للأسر التي تفضل الإقامة في ثلاثي أو خماسي ترتيب ذلك، مع فرق في السعر.</p>
+    </div>
+    <div class="rooms">
+      <div class="room">
+        <div class="beds" aria-hidden="true">
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+        </div>
+        <h3>غرفة ثلاثية</h3>
+        <p>لأسرة صغيرة أو ثلاثة أصدقاء يريدون الخصوصية. سعر الفرد أعلى قليلًا من الرباعي.</p>
+      </div>
+      <div class="room std">
+        <span class="badge">الأساسي</span>
+        <div class="beds" aria-hidden="true">
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+        </div>
+        <h3>غرفة رباعية</h3>
+        <p>الحجز الافتراضي لكل برامجنا. الأسعار المعلنة من 37 إلى 41 ألفًا محسوبة على هذا الأساس.</p>
+      </div>
+      <div class="room">
+        <div class="beds" aria-hidden="true">
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+          <i data-lucide="bed" aria-hidden="true"></i>
+        </div>
+        <h3>غرفة خماسية</h3>
+        <p>للعائلات الكبيرة التي تريد البقاء في غرفة واحدة. سعر الفرد أوفر من الرباعي.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-copy">
+        <span class="eyebrow">من نحن</span>
+        <h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem)">شركة قاهرية، بقلب صعيدي، ومقر يومي في مكة</h2>
+        <p>
+          شركة مكة مقرها القاهرة، وصاحبها الأستاذ مدثر ابن محافظة قنا. يدير فندقًا في شارع إبراهيم الخليل بمكة
+          ويقيم هناك معظم العام، ولهذا يعرف كل فندق في الشارع ويعرف ما يناسب كل أسرة.
+        </p>
+        <p>
+          كانت حجوزات الشركة تتم من القاهرة عبر مندوبيها. اليوم نفتح الباب لأهل الصعيد مباشرة:
+          رحلات تنطلق من عندنا، وحجز يبدأ من قنا، بلا وسطاء.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="who">
+          <span class="avatar" aria-hidden="true">م</span>
+          <div>
+            <h3>الأستاذ مدثر</h3>
+            <span class="role">صاحب الشركة · مدير فندق في شارع إبراهيم الخليل</span>
+          </div>
+        </div>
+        <dl>
+          <dt>المقر</dt><dd>القاهرة</dd>
+          <dt>الأصل</dt><dd>قنا، صعيد مصر</dd>
+          <dt>النشاط</dt><dd>تأشيرات عمرة وحج</dd>
+          <dt>في مكة</dt><dd>شارع إبراهيم الخليل، خلف برج الساعة</dd>
+          <dt>الجديد</dt><dd>رحلات وحجوزات تبدأ من الصعيد</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec alt" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">تواصل معنا</span>
+      <h2>رقمان في خدمتك: أحدهما في مكة والآخر في مصر</h2>
+      <p>للاطمئنان أو السؤال تحدث مع الأستاذ مدثر مباشرة على واتساب، أو اتصل بالرقم المصري لأي استفسار.</p>
+    </div>
+    <div class="contact">
+      <div class="ccard">
+        <span class="flag"><i class="sa" aria-hidden="true"></i> الرقم السعودي · مكة المكرمة</span>
+        <h3>الأستاذ مدثر <span class="pref">يُفضَّل واتساب</span></h3>
+        <!-- ضع الرقم هنا بصيغة دولية، مثال: +966 5X XXX XXXX -->
+        <div class="tel placeholder">الرقم السعودي يُضاف هنا</div>
+        <p>يعمل للمكالمات وواتساب. الأستاذ مدثر مشغول معظم الوقت في إدارة الفندق، فالرسائل على واتساب تصله أسرع ويردّ عليها بنفسه.</p>
+        <div class="acts">
+          <a class="btn btn-wa" href="https://wa.me/966XXXXXXXXX" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            راسلنا على واتساب
+          </a>
+          <a class="btn btn-ghost" href="tel:+966XXXXXXXXX">اتصال</a>
+        </div>
+      </div>
+      <div class="ccard">
+        <span class="flag"><i class="eg" aria-hidden="true"></i> الرقم المصري · للاستفسارات</span>
+        <h3>خدمة الحجز في مصر</h3>
+        <!-- ضع الرقم هنا بصيغة دولية، مثال: +20 1X XXXX XXXX -->
+        <div class="tel placeholder">الرقم المصري يُضاف هنا</div>
+        <p>رقم مكالمات يردّ عليه فريقنا في مصر على أي سؤال عن البرامج والأسعار ومواعيد الرحلات من الصعيد.</p>
+        <div class="acts">
+          <a class="btn btn-gold" href="tel:+20XXXXXXXXXX">
+            <i data-lucide="phone" aria-hidden="true"></i>
+            اتصل الآن
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="year">2026</span> شركة مكة للعمرة والحج · القاهرة – قنا – مكة المكرمة</div>
+    <ul class="links">
+      <li><a href="#programs">البرامج</a></li>
+      <li><a href="#trip">الرحلة القادمة</a></li>
+      <li><a href="#hotels">الفنادق</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/966XXXXXXXXX" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script>
+(function(){
+  if(window.lucide){lucide.createIcons({attrs:{"stroke-width":1.75}});}
+  var root=document.documentElement;
+  root.setAttribute('dir','rtl'); root.setAttribute('lang','ar');
+
+  /* ---- tabs ---- */
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function activate(key){
+    tabs.forEach(function(t){
+      var on=t.dataset.tab===key;
+      t.setAttribute('aria-selected',on?'true':'false');
+      document.getElementById('panel-'+t.dataset.tab).setAttribute('data-active',on?'true':'false');
+    });
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){activate(t.dataset.tab)});
+    t.addEventListener('keydown',function(e){
+      var i=tabs.indexOf(t),n=null;
+      if(e.key==='ArrowLeft')n=tabs[(i+1)%tabs.length];       /* RTL: left moves forward */
+      if(e.key==='ArrowRight')n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){n.focus();activate(n.dataset.tab);e.preventDefault();}
+    });
+  });
+  /* menu links that target a tab */
+  document.querySelectorAll('a[data-tab]').forEach(function(a){
+    a.addEventListener('click',function(){activate(a.dataset.tab);closeDD();closeMobile();});
+  });
+
+  /* ---- dropdown ---- */
+  var ddBtn=document.getElementById('dd-btn'),dd=document.getElementById('dd-menu');
+  function openDD(){dd.setAttribute('data-open','true');ddBtn.setAttribute('aria-expanded','true');}
+  function closeDD(){dd.setAttribute('data-open','false');ddBtn.setAttribute('aria-expanded','false');}
+  ddBtn.addEventListener('click',function(e){e.stopPropagation();dd.getAttribute('data-open')==='true'?closeDD():openDD();});
+  var li=ddBtn.parentElement,hoverT;
+  li.addEventListener('mouseenter',function(){clearTimeout(hoverT);openDD();});
+  li.addEventListener('mouseleave',function(){hoverT=setTimeout(closeDD,180);});
+  document.addEventListener('click',function(e){if(!li.contains(e.target))closeDD();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDD();closeMobile();}});
+
+  /* ---- mobile nav ---- */
+  var burger=document.getElementById('burger'),mobile=document.getElementById('mobile');
+  function closeMobile(){mobile.setAttribute('data-open','false');burger.setAttribute('aria-expanded','false');}
+  burger.addEventListener('click',function(){
+    var open=mobile.getAttribute('data-open')==='true';
+    mobile.setAttribute('data-open',open?'false':'true');burger.setAttribute('aria-expanded',open?'false':'true');
+  });
+  mobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMobile);});
+
+  /* ---- countdown to departure (23 Sep 2026, Cairo time) ---- */
+  var target=new Date('2026-09-23T06:00:00+03:00').getTime();
+  var D=document.getElementById('c-d'),H=document.getElementById('c-h'),M=document.getElementById('c-m'),S=document.getElementById('c-s');
+  function pad(n){return (n<10?'0':'')+n}
+  function tick(){
+    var diff=target-Date.now();
+    if(diff<=0){
+      document.getElementById('count').innerHTML='<div style="grid-column:1/-1"><b style="font-size:1.05rem">انطلقت الرحلة · احجز في الموعد التالي</b></div>';
+      return;
+    }
+    var s=Math.floor(diff/1000);
+    D.textContent=pad(Math.floor(s/86400));
+    H.textContent=pad(Math.floor(s%86400/3600));
+    M.textContent=pad(Math.floor(s%3600/60));
+    S.textContent=pad(s%60);
+    setTimeout(tick,1000);
+  }
+  tick();
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
