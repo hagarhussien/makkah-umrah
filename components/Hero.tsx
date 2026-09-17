@@ -32,7 +32,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-
+{/* 
         <aside className="trip-card" aria-label="الرحلة القادمة">
           <span className="tag">
             <i aria-hidden="true" /> الحجز مفتوح الآن
@@ -46,10 +46,10 @@ export default function Hero() {
             تنطلق الرحلة فور اكتمال العدد. الحد الأدنى {group.min} معتمرًا، وعند اكتمال {group.full} يُحجز طيران كامل
             للمجموعة.
           </p>
-        </aside>
+        </aside> */}
       </div>
 
-      <div className="stats">
+      <div className="stats"  >
         <div className="wrap">
           <div className="stat">
             <b>أسعار حسب الطلب</b>
