@@ -19,6 +19,7 @@ export const site = {
     departure: "2026-09-23T06:00:00+03:00",
     days: 7,
   },
+    price: { from: "40 ألف", currency: "جنيه" },
 
   group: { min: 40, full: 80 },
 } as const;

@@ -4,7 +4,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { site, waLink } from "@/lib/site";
 
 export default function Hero() {
-  const { trip, group } = site;
+  const { trip, group, price } = site;
   return (
     <section className="hero">
       <div className="hero-sky" aria-hidden="true" />
@@ -32,7 +32,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-{/* 
+        {/* 
         <aside className="trip-card" aria-label="الرحلة القادمة">
           <span className="tag">
             <i aria-hidden="true" /> الحجز مفتوح الآن
@@ -52,8 +52,8 @@ export default function Hero() {
       <div className="stats"  >
         <div className="wrap">
           <div className="stat">
-            <b>أسعار حسب الطلب</b>
-            <span>تختلف حسب الفندق والتوقيت · تواصل معنا للسعر الحالي</span>
+            <b>تبدأ من {price.from} {price.currency}</b>
+            <span>للفرد في غرفة رباعية · تختلف حسب الفندق والتوقيت</span>
           </div>
           <div className="stat">
             <b>من محرم لشوال</b>

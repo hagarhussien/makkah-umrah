@@ -11,7 +11,7 @@ const programs: { key: ProgramKey; title: string; sub: string; price: string }[]
     key: "eco",
     title: "عمرة شارع إبراهيم الخليل",
     sub: "فنادق خلف برج الساعة · غرف رباعية",
-    price: "تواصل معنا للسعر",
+    price: "تبدأ من 40 ألف جنيه",
   },
   {
     key: "vip",
